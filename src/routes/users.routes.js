@@ -14,18 +14,20 @@ router.get("/users/:UserId", (req, res) => {
     res.send("Getting user by id: " + UserId);
 });
 
-/*  */
+/* Create user */
 router.post("/users", (req, res) => {
     res.send("Creating user");
 });
 
-/*  */
+/* Delete user */
 router.delete("/users/:UserId", (req, res) => {
     res.send("Deleting user by id: " + req.params.UserId);
 });
 
-
-
+/* Put users */
+router.put("/users/:UserId", (req, res) => {
+    res.send("Obteniendo usuarios" + req.params.UserId);
+});
 
 
 
